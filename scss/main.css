@@ -90,6 +90,20 @@ body {
   bottom: 15px;
 }
 
+.cards-destination-section {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 3vw;
+       column-gap: 3vw;
+}
+
+.cards-destination {
+  width: 20vw;
+  height: 40vh;
+  border: none;
+  overflow: hidden;
+}
+
 .hero {
   background: #FEFAF5;
   padding: 20px 5vw 20px 10vw;
