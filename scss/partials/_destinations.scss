@@ -1,0 +1,17 @@
+@use './global' as *;
+@use './variables' as *;
+@use './mixins' as *;
+
+.cards-destination-section {
+    display: flex;
+    justify-content: center;
+    column-gap: 3vw;
+}
+
+.cards-destination {
+    width:20vw;
+    height: 40vh;
+    border:none;
+    overflow: hidden;
+    
+}
