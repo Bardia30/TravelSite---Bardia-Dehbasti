@@ -1,0 +1,104 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+body {
+    font-family: $font;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.navbar {
+    background: $secondary-color;
+    padding: 2.5px 5vw 2.5px 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__h3{
+        color: $primary-text;
+        font-size: 1em;
+        font-weight: 600;
+        margin: 0;
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        &__item {
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin-left: 15px;
+            
+
+            &--link{
+                text-decoration: none;
+                color:black;
+                
+            }
+            &--current {
+                border-bottom: 2.5px solid $underline-color;
+                padding-bottom: 5px;
+                // text-shadow: 0px 1px 2px #363636;
+
+            }
+        }
+    }
+}
+
+
+.footer {
+    background: $primary-color;
+    padding: 5vh 5vw 5vh 10vw;
+    display: flex;
+    justify-content: space-around;
+
+    &__h3 {
+        color: $primary-text;
+        font-size: 1.25rem;
+        font-weight:600;
+    }
+    &__p{
+        color:$primary-text;
+        font-size: 0.85rem;
+        font-weight: 500;
+        &--small{
+            color: $underline-color;
+            font-size: 0.6rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            
+        }
+        &--margin {
+            margin-top:0;
+        }
+        section {
+            height:50px;
+        }
+    }
+    &__img {
+        width: 2vw;
+        margin-right:30px;
+        &--facebook {
+            width: 1.2vw;
+        }
+    }
+}
+
+.hours {
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__section {
+        margin-right: 50px;
+    }
+
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

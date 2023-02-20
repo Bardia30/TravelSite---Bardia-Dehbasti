@@ -12,10 +12,10 @@
     <nav class="navbar">
         <h3 class="navbar__h3">Travel Site</h3>
         <ul class="navbar__list">
-            <li class="navbar__list__item">Home</li>
-            <li class="navbar__list__item">Hawaii</li>
-            <li class="navbar__list__item">Iceland</li>
-            <li class="navbar__list__item">Greece</li>
+            <a class="navbar__list__item--link" href="#"><li class="navbar__list__item navbar__list__item--current">Home</li></a>
+            <a class="navbar__list__item--link" href="./pages/hawaii.html"><li class="navbar__list__item">Hawaii</li></a>
+            <a class="navbar__list__item--link" href="./pages/iceland.html"><li class="navbar__list__item">Iceland</li></a>
+            <a class="navbar__list__item--link" href="./pages/greece.html"><li class="navbar__list__item">Greece</li></a>
         </ul>
     </nav>
 </header>
@@ -24,7 +24,7 @@
         <section class="hero--left">
             <h3 class="hero__h3">Travelling Comes With Endless Discoveries</h3>
             <p class="hero__p">Don’t let your dreams be just dreams. Experience the world by booking a vacation with us now.</p>
-            <a class="hero__button--link" href="#"><button type="button" class="hero__button">SHOP NOW</button></a>
+            <a class="hero__button--link" href="#"><button type="button" class="hero__button">Get started</button></a>
         </section>
         <img class="hero__img" src="./assets/Images/hero.png" alt="hero-image">
     </section>
@@ -46,32 +46,35 @@
         </section>
     </section>
 </main>
-<footer>
+<footer class="footer">
     <section class="contact">
         <h3 class="footer__h3">Contact</h3>
         <p class="footer__p--small">Email</p>
-        <p class="footer__p"></p>
+        <p class="footer__p">info@travelsite.com</p>
     </section>
     <section class="hours">
         <h3 class="footer__h3">Hours</h3>
-        <section class="hours__section">
-            <p class="footer__p--small">monday - friday</p>
-            <p class="footer__p">9:AM - 5:00 PM</p>
+        <section class="hours__container">
+            <section class="hours__section">
+                <p class="footer__p--small footer__p--margin">monday - friday</p>
+                <p class="footer__p">9:AM - 5:00 PM</p>
+            </section>
+            <section class="hours__section">
+                <p class="footer__p--small footer__p--margin">saturday</p>
+                <p class="footer__p">10:00 AM - 4:00 PM</p>
+            </section>
+            <section class="hours__section">
+                <p class="footer__p--small footer__p--margin">sunday</p>
+                <p class="footer__p">Closed</p>
+            </section>
         </section>
-        <section class="hours__section">
-            <p class="footer__p--small">saturday</p>
-            <p class="footer__p">10:00 AM - 4:00 PM</p>
-        </section>
-        <section class="hours__section">
-            <p class="footer__p--small">sunday</p>
-            <p class="footer__p">Closed</p>
-        </section>
+    </section>
     </section>
     <section class="social">
         <h3 class="footer__h3">Social</h3>
         <section class="social__images">
             <img class="footer__img" src="./assets/Icons/icon-instagram.png" alt="instagram">
-            <img class="footer__img" src="./assets/Icons/icon-facebook.png" alt="facebook">
+            <img class="footer__img footer__img--facebook" src="./assets/Icons/icon-facebook.png" alt="facebook">
             <img class="footer__img" src="./assets/Icons/icon-twitter.png" alt="twitter">
         </section>
     </section>
