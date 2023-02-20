@@ -101,4 +101,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    &__images{
+        position: relative;
+        bottom: 15px;
+    }
 }

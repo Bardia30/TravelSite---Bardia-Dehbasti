@@ -85,6 +85,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.social__images {
+  position: relative;
+  bottom: 15px;
+}
 
 .hero {
   background: #FEFAF5;
