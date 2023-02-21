@@ -4,6 +4,7 @@
 @use './partials/destinations' as *;
 
 
+
 .hero {
     background: $primary-color;
     padding: 20px 5vw 20px 10vw;
@@ -90,5 +91,4 @@
     &__link {
         text-decoration: none;
     }
-   
 }

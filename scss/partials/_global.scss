@@ -14,6 +14,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 50;
     
     &__h3{
         color: $primary-text;
