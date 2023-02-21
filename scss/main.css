@@ -29,6 +29,10 @@ body {
   font-weight: 500;
   margin-left: 15px;
 }
+.navbar__list__item:hover {
+  color: #FEFAF5;
+  background-color: #DB7A4E;
+}
 .navbar__list__item--link {
   text-decoration: none;
   color: black;
@@ -158,6 +162,11 @@ body {
   width: 100%;
   text-align: center;
 }
+.card-destination__list__item:hover {
+  background: #DB7A4E;
+  color: #FEFAF5;
+  transition: 0.5s ease-in;
+}
 
 .hero {
   background: #FEFAF5;
@@ -228,6 +237,10 @@ body {
   height: 100%;
   z-index: -1;
 }
+.card:hover {
+  border: 3px solid #DB7A4E;
+  transition: 0.5s ease-in-out;
+}
 .card__h3 {
   position: relative;
   z-index: 1;
@@ -237,4 +250,10 @@ body {
 }
 .card__link {
   text-decoration: none;
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+}
+.card__link:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
 }/*# sourceMappingURL=main.css.map */

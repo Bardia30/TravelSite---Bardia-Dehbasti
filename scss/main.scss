@@ -78,6 +78,10 @@
         height: 100%;
         z-index: -1;
     }
+    &:hover {
+        border: 3px solid $underline-color;
+        transition: 0.5s ease-in-out;
+    }
 
     &__h3 {
         position: relative;
@@ -90,5 +94,12 @@
 
     &__link {
         text-decoration: none;
+        transform: scale(1.0);
+        transition: 0.5s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+            transition: 0.5s ease-in-out;
+        }
     }
 }
+
