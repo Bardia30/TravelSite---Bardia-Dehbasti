@@ -4,14 +4,19 @@ body {
   margin: 0;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 50;
+}
+
 .navbar {
   background: #FFFFFF;
   padding: 2.5px 5vw 2.5px 10vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  z-index: 50;
 }
 .navbar__h3 {
   color: #335576;
@@ -99,6 +104,7 @@ body {
 .main {
   height: 80vh;
   overflow: hidden;
+  margin-top: 60px;
 }
 .main__h1 {
   padding: 20px 10vw 20px 10vw;
@@ -174,6 +180,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: space-between;
+  margin-top: 60px;
 }
 .hero--left {
   width: 46%;

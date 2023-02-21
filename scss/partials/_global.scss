@@ -7,6 +7,12 @@ body {
     margin: 0;
 }
 
+header {
+    position:fixed;
+    top:0;
+    width:100vw;
+    z-index: 50;
+}
 
 .navbar {
     background: $secondary-color;
@@ -14,8 +20,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    z-index: 50;
+    
     
     &__h3{
         color: $primary-text;
@@ -34,6 +39,7 @@ body {
             &:hover {
                 color: $primary-color;
                 background-color: $underline-color;
+
             }
 
             &--link{
