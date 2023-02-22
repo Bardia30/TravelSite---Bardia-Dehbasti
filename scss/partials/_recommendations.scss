@@ -6,15 +6,17 @@
 .recommendations {
     padding: 5vh 10vw 10vh 10vw;
     &__h3 {
-        color: $primary-text;
-        font-size: 1.25rem;
-        font-weight:600;
+        // color: $primary-text;
+        // font-size: 1.25rem;
+        // font-weight:600;
+        @include font($weight:600, $size:1.25rem);
     }
 }
 
 .cards-section {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    @include flex($justify:center, $align:normal);
     column-gap: 3vw;
 }
 
@@ -32,25 +34,28 @@
     }
     &:hover {
         border: 3px solid $underline-color;
-        transition: 0.5s ease-in-out;
+        transition: $trans;
     }
 
     &__h3 {
-        position: relative;
+        // position: relative;
+        @include position($bottom:18%, $left:65%);
         z-index: 1;
         color: $primary-color;
-        bottom: 18%;
-        left: 65%;
+        // bottom: 18%;
+        // left: 65%;
 
     }
 
     &__link {
         text-decoration: none;
-        transform: scale(1.0);
-        transition: 0.5s ease-in-out;
+        // transform: scale(1.0);
+        // transition: $trans;
+        @include animate;
         &:hover{
-            transform: scale(1.1);
-            transition: 0.5s ease-in-out;
+            // transform: scale(1.1);
+            // transition: $trans;
+            @include animate($scale:1.1);
         }
     }
 }

@@ -1,0 +1,34 @@
+@mixin position($pos:relative, $top:auto, $bottom:auto, $right:auto, $left:auto) {
+    position: $pos;
+    top: $top;
+    bottom:$bottom;
+    left:$left;
+    right:$right;
+}
+
+@mixin animate($scale:1.0){
+    transform: scale($scale);
+    transition: $trans;
+}
+
+
+@mixin flex($align: center, $justify:space-around, $direction:row, $wrap: nowrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction:$direction;
+    flex-wrap:$wrap;
+}
+
+
+@mixin font($size:4em, $weight: 300, $color:$primary-text) {
+    font-size:$size;
+    font-weight:$weight;
+    color: $color;
+}
+
+@mixin button-hover {
+    background: $underline-color;
+    color: $primary-color;
+    transition: $trans;
+}

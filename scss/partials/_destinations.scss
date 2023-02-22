@@ -9,28 +9,32 @@
     margin-top:6.5vh;
     &__h1 {
         padding: 20px 10vw 20px 10vw;
-        color: $primary-color;
-        font-size: 4rem;
-        font-weight:800;
+        // color: $primary-color;
+        // font-size: 4rem;
+        // font-weight:800;
+        @include font($color:$primary-color, $size: 4rem, $weight:800);
     }
 }
 
 .background-img {
     width:100%;
     background-position: center;
-    position: relative;
-    top: -90vh;
+    // position: relative;
+    // top: -90vh;
+    @include position($top:-90vh);
     z-index: -20;
 }
 
 
 .cards-destination-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flex($justify:center);
     column-gap: 3vw;
-    position:absolute;
-    bottom: 0;
+    // position:absolute;
+    // bottom: 0;
+    @include position($pos:absolute, $bottom:0);
     z-index: 40;
     width: 100%;
     height: 100%;
@@ -43,9 +47,10 @@
     background: $secondary-color;
     border-radius: 5px;
     padding: 0 1vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    @include flex($justify:normal, $direction:column);
     &__h3 {
         padding-bottom: 0.25vh;
         border-bottom: 2px solid black;
@@ -54,10 +59,11 @@
     }
     &__list{
         list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: space-around;
+        @include flex($direction:column);
         row-gap: 2vh;
         margin: 0 auto;
         padding-bottom:2.3vh;
@@ -68,9 +74,10 @@
             width:100%;
             text-align: center;
             &:hover {
-                background: $underline-color;
-                color: $primary-color;
-                transition: 0.5s ease-in;
+                // background: $underline-color;
+                // color: $primary-color;
+                // transition: $trans;
+                @include button-hover;
             }
         }
     }

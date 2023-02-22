@@ -5,30 +5,37 @@
 .hero {
     background: $primary-color;
     padding: 2.23vh 5vw 2.23vh 10vw;
-    display:flex;
-    justify-content: space-between;
-    align-items: space-between;
+
+    // display:flex;
+    // justify-content: space-between;
+    // align-items: space-between;
+    @include flex($justify: space-between, $align: space-between);
+
     margin-top: 6.75vh;
     &--left {
         width:46%;
         margin-right:1.6vw;
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
+        @include flex($direction: column, $justify:normal, $align:normal);
         padding-top: 5vh;
         row-gap: 2.2vh;
+
     }
 
     &__h3 {
-        color: $primary-text;
-        font-size: 2rem;
-        font-weight: 700;
+        // color: $primary-text;
+        // font-size: 2rem;
+        // font-weight: 700;
+        @include font($size:2rem, $weight:700);
         margin-bottom:0;
     }
 
     &__p {
-        color: $primary-text;
-        font-size: 0.8rem;
-    }  
+        // color: $primary-text;
+        // font-size: 0.8rem;
+        @include font($size:0.8rem);
+    }
 
     &__button {
         background-color: $underline-color;

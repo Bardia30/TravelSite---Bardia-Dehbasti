@@ -7,6 +7,9 @@ body {
 header {
   position: fixed;
   top: 0;
+  bottom: auto;
+  left: auto;
+  right: auto;
   width: 100vw;
   z-index: 50;
 }
@@ -95,7 +98,10 @@ header {
 }
 .social__images {
   position: relative;
+  top: auto;
   bottom: 1.2vw;
+  left: auto;
+  right: auto;
 }
 
 .main {
@@ -247,10 +253,12 @@ header {
 }
 .card__h3 {
   position: relative;
-  z-index: 1;
-  color: #FEFAF5;
+  top: auto;
   bottom: 18%;
   left: 65%;
+  right: auto;
+  z-index: 1;
+  color: #FEFAF5;
 }
 .card__link {
   text-decoration: none;
