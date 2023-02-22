@@ -41,12 +41,13 @@
 }
 
 .card-destination {
-    width:20vw;
-    height: 42vh;
-    border:none;
+    // width:20vw;
+    // height: 42vh;
+    // border:none;
     background: $secondary-color;
-    border-radius: 5px;
+    // border-radius: 5px;
     padding: 0 1vh;
+    @include card($height:42vh, $border:none, $shadow:0, $overflow:none);
     // display: flex;
     // flex-direction: column;
     // align-items: center;

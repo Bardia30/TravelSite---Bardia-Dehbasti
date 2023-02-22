@@ -32,3 +32,22 @@
     color: $primary-color;
     transition: $trans;
 }
+
+@mixin button {
+    background-color: $underline-color;
+    color:$primary-color;
+    border: none;
+    border-radius: 20px;
+    width: 25%;
+    padding: 1vh 2vw;
+}
+
+
+@mixin card($height:40vh, $border:1px solid rgba(0,0,0,0.2),$radius: 5px, $shadow:0px 4px 4px rgba(0, 0, 0, 0.2), $overflow:hidden) {
+    width:20vw;
+    height: $height;
+    border-radius: $radius;
+    border: $border;
+    overflow: $overflow;
+    box-shadow: $shadow;
+}
