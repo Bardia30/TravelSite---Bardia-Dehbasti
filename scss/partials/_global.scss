@@ -16,12 +16,10 @@ header {
 
 .navbar {
     background: $secondary-color;
-    padding: 2.5px 5vw 2.5px 10vw;
+    padding: 1vh 5vw 1vh 10vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
     &__h3{
         color: $primary-text;
         font-size: 1em;
@@ -35,7 +33,7 @@ header {
         &__item {
             font-size: 0.75rem;
             font-weight: 500;
-            margin-left: 15px;
+            margin-left: 1.2vw;
             &:hover {
                 color: $primary-color;
                 background-color: $underline-color;
@@ -45,14 +43,10 @@ header {
             &--link{
                 text-decoration: none;
                 color:black;
-                
-                
             }
             &--current {
                 border-bottom: 2.5px solid $underline-color;
-                padding-bottom: 5px;
-                // text-shadow: 0px 1px 2px #363636;
-
+                padding-bottom: 0.55vh;
             }
         }
     }
@@ -84,13 +78,10 @@ header {
         &--margin {
             margin-top:0;
         }
-        section {
-            height:50px;
-        }
     }
     &__img {
         width: 2vw;
-        margin-right:30px;
+        margin-right:2.5vw;
         &--facebook {
             width: 1.2vw;
         }
@@ -104,7 +95,7 @@ header {
         justify-content: space-between;
     }
     &__section {
-        margin-right: 50px;
+        margin-right: 4vw;
     }
 
 }
@@ -115,6 +106,6 @@ header {
     justify-content: space-between;
     &__images{
         position: relative;
-        bottom: 15px;
+        bottom: 1.2vw;
     }
 }
