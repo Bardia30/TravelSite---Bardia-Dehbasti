@@ -8,44 +8,27 @@ body {
 }
 
 header {
-    // position:fixed;
-    // top:0;
     @include position($pos:fixed, $top:0);
     width:100vw;
     z-index: 50;
 }
 
 .navbar {
-    background: $secondary-color;
-    padding: 1vh 5vw 1vh 10vw;
-    
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
+    @include bg-padding;
     @include flex($justify:space-between);
 
 
     &__h3{
-        // color: $primary-text;
-        // font-size: 1em;
-        // font-weight: 600;
-        @include font($size:1em, $weight:600); 
+        @include font($size:1em, $weight:600);
         margin: 0;
     }
     &__list {
         list-style: none;
-
-        // display: flex;
-        // justify-content: space-between;
         @include flex($justify:space-between, $align:normal);
         &__item {
-            // font-size: 0.75rem;
-            // font-weight: 500;
             @include font($size:0.75rem, $weight:500, $color:black);
             margin-left: 1.2vw;
             &:hover {
-                // color: $primary-color;
-                // background-color: $underline-color;
                 @include button-hover;
             }
 
@@ -63,31 +46,17 @@ header {
 
 
 .footer {
-    background: $primary-color;
-    padding: 5vh 5vw 5vh 10vw;
-    
-    // display: flex;
-    // justify-content: space-around;
+    @include bg-padding($bg: $primary-color, $padding:5vh 5vw 5vh 10vw);
     @include flex($align:normal);
 
     &__h3 {
-        // color: $primary-text;
-        // font-size: 1.25rem;
-        // font-weight:600;
         @include font($size:1.25rem, $weight:600);
     }
     &__p{
-        // color:$primary-text;
-        // font-size: 0.85rem;
-        // font-weight: 500;
         @include font($size:0.85rem, $weight:500);
         &--small{
-            // color: $underline-color;
-            // font-size: 0.6rem;
-            // font-weight: 300;
             @include font($size:0.6rem, $color:$underline-color);
             text-transform: uppercase;
-            
         }
         &--margin {
             margin-top:0;
@@ -103,10 +72,7 @@ header {
 }
 
 .hours {
-    
     &__container {
-        // display: flex;
-        // justify-content: space-between;
         @include flex($justify:space-between, $align:normal);
     }
     &__section {
@@ -116,14 +82,9 @@ header {
 }
 
 .social {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
     @include flex($direction: column, $justify:space-between, $align:normal);
 
     &__images{
-        // position: relative;
-        // bottom: 1.2vw;
         @include position($bottom:1.2vw)
     }
 }

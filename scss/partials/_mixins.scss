@@ -51,3 +51,8 @@
     overflow: $overflow;
     box-shadow: $shadow;
 }
+
+@mixin bg-padding($bg: $secondary-color, $padding:1vh 5vw 1vh 10vw) {
+    background: $bg;
+    padding: $padding;
+}
