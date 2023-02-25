@@ -266,6 +266,49 @@ header {
   transition: 0.5s ease-in-out;
 }
 
+@media (max-width: 900px) {
+  .background-img {
+    height: 200vh;
+  }
+  .cards-destination-section {
+    flex-direction: column;
+    row-gap: 5vh;
+    top: 5vh;
+  }
+  .card-destination {
+    width: 60vw;
+    height: 15vh;
+  }
+  .card-destination__list {
+    flex-direction: row;
+  }
+}
+@media (min-width: 500px) and (max-width: 900px) {
+  .main {
+    height: 130vh;
+  }
+  .card-destination__list__item {
+    padding: 1vh 1vw;
+  }
+}
+@media (min-width: 200px) and (max-width: 500px) {
+  .main {
+    height: 180vh;
+    margin-top: 20vh;
+  }
+  .background-img {
+    height: 240vh;
+  }
+  .cards-destination-section {
+    top: 60vh;
+  }
+  .card-destination {
+    height: 50vh;
+  }
+  .card-destination__list {
+    flex-direction: column;
+  }
+}
 .hero {
   background: #FEFAF5;
   padding: 2.23vh 5vw 2.23vh 10vw;
