@@ -7,16 +7,38 @@
     @include bg-padding($padding: 5vh 10vw 10vh 10vw );
     &__h3 {
         @include font($weight:600, $size:1.25rem);
+        @media (max-width:900px){
+            text-align: center;
+        }
     }
 }
 
 .cards-section {
     @include flex($justify:center, $align:normal);
     column-gap: 3vw;
+    @media (max-width:900px) {
+        @include flex($direction:column);
+        row-gap: 5vw;
+    }
 }
 
 .card {
     @include card;
+    @media (max-width:900px) {
+        width:40vw;
+        height:50vh;
+    }
+    @media (max-width:550px){
+        width:50vw;
+    }
+    @media (max-width:430px){
+        width:60vw;
+        height:40vh;
+    }
+    @media (max-width:360px){
+        width:50vw;
+        height:30vh;
+    }
     &__img {
         width: 100%;
         height: 100%;
@@ -31,6 +53,12 @@
         @include position($bottom:18%, $left:65%);
         z-index: 1;
         color: $primary-color;
+        @media (min-width:900px) and (max-width:1200px) {
+            left:55%;
+        }
+        @media (max-width:360px){
+            left:30%;
+        }
     }
 
     &__link {
@@ -40,4 +68,6 @@
             @include animate($scale:1.1);
         }
     }
+    
 }
+
