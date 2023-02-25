@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 @mixin position($pos:relative, $top:auto, $bottom:auto, $right:auto, $left:auto) {
     position: $pos;
     top: $top;

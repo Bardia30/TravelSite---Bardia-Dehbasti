@@ -44,6 +44,24 @@ header {
     }
 }
 
+@media( max-width:500px){
+    .navbar{
+        @include flex($direction:column, $justify:center);
+        &__h3{
+            font-size: 1.75rem;
+        }
+        &__list {
+            @include flex($direction:column, $justify: center);
+            padding-left:0;
+            &__item {
+                font-size: 1.2rem;
+                margin-bottom:1vh;
+            }
+        }
+    }
+}
+
+
 
 .footer {
     @include bg-padding($bg: $primary-color, $padding:5vh 5vw 5vh 10vw);

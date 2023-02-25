@@ -31,7 +31,7 @@
 }
 
 .card-destination {
-    @include bg-card($padding:0 1vh);
+    @include bg-padding($padding:0 1vh);
     @include card($height:42vh, $border:none, $shadow:0, $overflow:none);
     @include flex($justify:normal, $direction:column);
     &__h3 {
