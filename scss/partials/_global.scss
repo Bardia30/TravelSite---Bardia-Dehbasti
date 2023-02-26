@@ -25,21 +25,21 @@ header {
     &__list {
         list-style: none;
         @include flex($justify:space-between, $align:normal);
-        &__item {
-            @include font($size:0.75rem, $weight:500, $color:black);
-            margin-left: 1.2vw;
-            &:hover {
-                @include button-hover;
-            }
+    }
+    &__item {
+        @include font($size:0.75rem, $weight:500, $color:black);
+        margin-left: 1.2vw;
+        &:hover {
+            @include button-hover;
+        }
 
-            &--link{
-                text-decoration: none;
-                color:black;
-            }
-            &--current {
-                border-bottom: 2.5px solid $underline-color;
-                padding-bottom: 0.55vh;
-            }
+        &--link{
+            text-decoration: none;
+            color:black;
+        }
+        &--current {
+            border-bottom: 2.5px solid $underline-color;
+            padding-bottom: 0.55vh;
         }
     }
 }

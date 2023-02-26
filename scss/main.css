@@ -37,22 +37,22 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-.navbar__list__item {
+.navbar__item {
   font-size: 0.75rem;
   font-weight: 500;
   color: black;
   margin-left: 1.2vw;
 }
-.navbar__list__item:hover {
+.navbar__item:hover {
   background: #DB7A4E;
   color: #FEFAF5;
   transition: 0.5s ease-in-out;
 }
-.navbar__list__item--link {
+.navbar__item--link {
   text-decoration: none;
   color: black;
 }
-.navbar__list__item--current {
+.navbar__item--current {
   border-bottom: 2.5px solid #DB7A4E;
   padding-bottom: 0.55vh;
 }
@@ -351,6 +351,8 @@ header {
 }
 .hero__button--link {
   cursor: pointer;
+  text-decoration: none;
+  color: #FEFAF5;
 }
 @media (min-width: 820px) and (max-width: 1200px) {
   .hero__button {
