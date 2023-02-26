@@ -122,9 +122,5 @@ header {
 
     &__images{
         @include position($bottom:1.2vw);
-        // @media (max-width:900px){
-        //     margin-right: 10vw;
-        //     margin-left: 10vw;
-        // }
     }
 }
