@@ -349,11 +349,6 @@ header {
   width: 25%;
   padding: 1vh 2vw;
 }
-.hero__button--link {
-  cursor: pointer;
-  text-decoration: none;
-  color: #FEFAF5;
-}
 @media (min-width: 820px) and (max-width: 1200px) {
   .hero__button {
     width: 30%;
@@ -404,9 +399,6 @@ header {
   .hero__button {
     width: 20vw;
   }
-  .hero__button--link {
-    align-self: center;
-  }
 }
 @media (max-width: 400px) {
   .hero {
@@ -433,9 +425,6 @@ header {
   }
   .hero__button {
     width: 30vw;
-  }
-  .hero__button--link {
-    align-self: center;
   }
 }
 @media (max-width: 500px) {

@@ -25,11 +25,11 @@
 
     &__button {
         @include button;
-        &--link{
-            cursor: pointer;
-            text-decoration: none;
-            color:$primary-color;
-        }
+        // &--link{
+        //     cursor: pointer;
+        //     text-decoration: none;
+        //     color:$primary-color;
+        // }
         @media (min-width:820px) and (max-width:1200px){
             width:30%;
         }
@@ -70,9 +70,9 @@
         }
         &__button{
             width:20vw;
-            &--link{
-                align-self: center;
-            }
+            // &--link{
+            //     align-self: center;
+            // }
         }
     }
 }
@@ -98,9 +98,9 @@
         }
         &__button{
             width:30vw;
-            &--link{
-                align-self: center;
-            }
+            // &--link{
+            //     align-self: center;
+            // }
         }
     }
 }
